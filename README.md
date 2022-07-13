@@ -1,5 +1,3 @@
-# week05-workdayscheduler
-
 <div id="top"></div>
 
 <div align="center">
