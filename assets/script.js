@@ -8,9 +8,15 @@ $(document).ready(function () {
         var time = $(this).parent().attr("id")
         var text = $(this).siblings(".description").val()
 
-        // save into local storage array
-        localStorage.setItem(time, text)
-        $("#localStorage").text("Task saved! \u2713")
+        // validate entry
+        if (!text) {
+            alert("No text found!")
+            return
+        } else {
+            // save into local storage array
+            localStorage.setItem(time, text)
+            $("#localStorage").text("Task saved! \u2713")
+        }
     })
    
     function timeChecker() {
