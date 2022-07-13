@@ -22,10 +22,12 @@ $(document).ready(function () {
     function timeChecker() {
         // get current number of hours
         var currentTime = moment().hour()
+        console.log(currentTime)
 
         // loop over time blocks
         $(".time-block").each(function () {
-            var timeBlock = parseInt($(this).attr("id").split("hour")[1])
+            var timeBlock = parseInt($(this).attr("id").split("block")[1])
+            console.log(timeBlock)
 
             // Check the time and current state
             if (timeBlock < currentTime) {
@@ -47,15 +49,15 @@ $(document).ready(function () {
     }
 
     // Get item from local storage if any
-    $("#nineAm .description").val(localStorage.getItem("nineAm"));
-    $("#tenAm .description").val(localStorage.getItem("tenAm"));
-    $("#elevenAm .description").val(localStorage.getItem("elevenAm"));
-    $("#twelvePm .description").val(localStorage.getItem("twelvePm"));
-    $("#onePm .description").val(localStorage.getItem("onePm"));
-    $("#twoPm .description").val(localStorage.getItem("twoPm"));
-    $("#threePm .description").val(localStorage.getItem("threePm"));
-    $("#fourPm .description").val(localStorage.getItem("fourPm"));
-    $("#fivePm .description").val(localStorage.getItem("fivePm"));
+    $("#block9 .description").val(localStorage.getItem("nineAm"))
+    $("#block10 .description").val(localStorage.getItem("tenAm"))
+    $("#block11 .description").val(localStorage.getItem("elevenAm"))
+    $("#block12 .description").val(localStorage.getItem("twelvePm"))
+    $("#block13 .description").val(localStorage.getItem("onePm"))
+    $("#block14 .description").val(localStorage.getItem("twoPm"))
+    $("#block15 .description").val(localStorage.getItem("threePm"))
+    $("#block16 .description").val(localStorage.getItem("fourPm"))
+    $("#block17 .description").val(localStorage.getItem("fivePm"))
 
-    timeChecker();
+    timeChecker()
 })
