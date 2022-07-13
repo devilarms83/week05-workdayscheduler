@@ -1,5 +1,3 @@
-# week05-workdayscheduler
-
 <div id="top"></div>
 
 <div align="center">
@@ -8,7 +6,7 @@
 
   <p align="center">
     <a href="https://devilarms83.github.io/week05-workdayscheduler/">
-        <img src="./Assets/images/_.gif" alt="" >
+        <img src="./assets/images/homework-demo.gif" alt="" >
     </a>
     <br />
     <br />
@@ -58,9 +56,14 @@ THEN the saved events persist
 
 * [HTML](https://en.wikipedia.org/wiki/HTML)
 * [CSS](https://en.wikipedia.org/wiki/CSS)
+* [Bootstrap v4.3.1](https://getbootstrap.com/)
+* [Font Awesome v5.8.1](https://fontawesome.com/)
 * [JS](https://www.javascript.com/)
+* [JQuery v3.2.1](https://jquery.com/)
+* [Moment.js v2.24.0](https://momentjs.com/)
 
-This week, the code quiz consists of HTML, CSS and Javascipt elements that we've learned so far in class. 
+
+This week, I inserted Bootstrap, Moment.js and javascipt elements to complete the starter code. Once a user hits the save icon, the task will be stored in local storage and will be restored upon refresh.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
